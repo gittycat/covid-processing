@@ -1,0 +1,28 @@
+version: '3.5'
+
+services:
+
+  postgres:
+    image: postgres:12-alpine
+    container_name: postgres
+    restart: always
+    stop_grace_period: 30s
+    environment:
+      POSTGRES_DB: covid
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+    labels:
+      service: "postgres"
+    volumes:
+      - "postgres:/var/lib/postgresql/data"
+    networks:
+      - public
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres:
+
+networks:
+  public:
+    driver: bridge
