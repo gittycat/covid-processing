@@ -21,8 +21,7 @@ brew update
 brew install libpq
 brew link --force libpq 
 
-echo 'fzfa_EHgMW*axBTE_34P' > ~/.pgpass
-source env.sh
+source env.sh  # contains PG user, password vars
 ```
 
 ### Python3 driver
