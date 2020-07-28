@@ -1,6 +1,19 @@
-# Setup
+# Covid mobile clinics Results Processing
 
-## Postgresql
+Note: This documentation is a work in progress.
+
+The goal of this project is to reduce the delay in reporting test resuls.
+The data is currently entered in Excel spreadsheets at external sites.
+This will be replaced by a web app at some point. In the mean time,
+the following process minimises disruption for the clinical staff (they
+stay with the Excel they know) but allows for automation of contacting
+the clients.
+
+
+
+
+
+## Postgresql Setup
 
 ### Install psql 
 ```
