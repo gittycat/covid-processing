@@ -9,7 +9,7 @@ the following process minimises disruption for the clinical staff (they
 stay with the Excel they know) but allows for automation of contacting
 the clients.
 
-
+![Landscape](images/plan.jpeg)
 
 
 
