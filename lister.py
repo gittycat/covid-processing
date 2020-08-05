@@ -1,4 +1,6 @@
 #
+# Generates 3 CSV files containing contacts that need to be
+# notified via sms, letters and phone calls.
 
 import os
 import psycopg2

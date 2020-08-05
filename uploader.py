@@ -8,7 +8,7 @@
 # For lab result data, a match is made based on the "labcode" field,
 # which is unique for each test.
 #
-# For the collection data from Star Health (master.csv), we overwrite the previous
+# For the collection data from clinics (master.csv), we overwrite the previous
 # content *for some fields only*: firstName, familyName, ContactDate
 # and ContactMethod.
 # The match between database row and csv line is done based on the

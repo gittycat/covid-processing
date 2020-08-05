@@ -1,5 +1,9 @@
-# Reads the grey-st.csv, simmons.csv, ... files and outputs master.csv
-#
+# 
+# Reads CSV data exported from Excel containing Covid-19 testing
+# client contacts. Some cleanup of the data is performed.
+# The resulting "master.csv" contains a normalised form of the
+# data that is next inserted into the database by uploader.py
+
 
 import os
 import csv

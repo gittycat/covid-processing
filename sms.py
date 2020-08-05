@@ -1,6 +1,9 @@
 #
 # Send an sms message to all phone numbers listed in the input csv file.
-#
+# The Twilio API gateway is used.
+# Note that the status of the Twilio messages needs to be polled an
+# hour later to retrieve messages that have failed to be received by
+# a mobile phone. These clients are notified by mail instead.
 #
 import os
 from twilio.rest import Client

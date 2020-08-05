@@ -1,19 +1,24 @@
 # Covid mobile clinics Results Processing
 
-Note: This documentation is a work in progress.
+My client was requested by the government to setup multiple mobile Covid-19 testing clinics around Melbourne, mostly targeting public housing projects that have been particularly affected in the infection second wave.
 
-The goal of this project is to reduce the delay in reporting test resuls.
-The data is currently entered in Excel spreadsheets at external sites.
-This will be replaced by a web app at some point. In the mean time,
-the following process minimises disruption for the clinical staff (they
-stay with the Excel they know) but allows for automation of contacting
-the clients.
+The initial data is entered by staff in the field in multiple Excel worksheets, which had to be consolidated with results coming back from the lab. The manual work involved resulted in multiple days of delays between reception of the results and communication with the client.
 
-![Landscape](images/plan.jpeg)
+This repo contains a series of scripts to consolidate both Excel data and lab results into a database, and generate a contact list every day.
+This process allows clients to be notified (phone, sms) on the same day as the organisation receiveds the results, and next day by mail.
+
+The majority of the work in this project involved cleaning up and fixing the Excel data mis entered in the field.
+
+A second team is involved in a project to create a proper Web interface with input validation instead of relying on Excel.
+
+<img src="images/plan.jpeg" width="600" />
 
 
 
 ## Postgresql Setup
+
+We use a dockerised PostgreSQL database.<br>
+Setup instructions for macOS.
 
 ### Install psql 
 ```
